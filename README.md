@@ -1,6 +1,6 @@
-# _Ping-Pong_
+# _Project Template_
 
-#### _Takes a number from a user and returns a range of numbers with different exceptions, June 9, 2017_
+#### _Brief Description: This is a template for future projects, June 9, 2017_
 
 #### By _**Mara Timberlake**_
 
