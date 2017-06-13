@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Ticket</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Ticket</h1>
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Purchase a movie ticket:</h2>
+          <form id="new-ticket">
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="text" class="form-control" id="age">
+            </div>
+
+            <div id="movies"> <!-- movie titles -->
+              <label for="movie">Movies Playing</label>
+              <div class="radio">
+                <label><input type="radio" name="movie" value="Wonder Woman">Wonder Woman - new release</label>
+              </div>
+              <div class="radio">
+                <label><input type="radio" name="movie" value="Cars 3">Cars 3</label>
+              </div>
+              <div class="radio disabled">
+                <label><input type="radio" name="movie" value="Descipable 3">Despicable 3</label>
+              </div>
+            </div>
+
+            <div id="times"> <!-- times available -->
+              <label for="times">Times Available</label>
+              <div class="radio">
+                <label class="radio-inline"><input type="radio" name="time" value="matinee">Matinee</label>
+                <label class="radio-inline"><input type="radio" name="time" value="night">Night</label>
+              </div>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Purchase</button>
+          </form>
+
+        </div>
+
+        <div class="col-md-6">
+          <div id="purchase">
+            <p class="lead">Movie: <span class="movie"></span>. Time: <span class="time"></span>. Age: <span class="age"></span>. Your price for this ticket is: <span class="purchase-price"></span></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
